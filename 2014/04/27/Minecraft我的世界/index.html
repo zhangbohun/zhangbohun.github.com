@@ -144,7 +144,7 @@ Minecraft的世界是什么样？Minecraft里有泥土，石头，水，有植�
     var gitalk = new Gitalk({
         clientID: 'b4b6a5785e129af96875',
         clientSecret: '629bf7f6e703e04c72a2fe60fb5360bf4549c5f2',
-        id: decodeURI(window.location.pathname),
+        id: decodeURI(window.location.pathname.split('/')[4]),
         repo: 'zhangbohun.github.io',
         owner: 'zhangbohun',
         admin: 'zhangbohun',
