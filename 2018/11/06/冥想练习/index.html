@@ -136,7 +136,7 @@
     var gitalk = new Gitalk({
         clientID: 'b4b6a5785e129af96875',
         clientSecret: '629bf7f6e703e04c72a2fe60fb5360bf4549c5f2',
-        id: decodeURI(window.location.pathname.split('/')[4]),
+        id: decodeURI(window.location.pathname.split('/')[window.location.pathname.split('/').length-2]),
         repo: 'zhangbohun.github.io',
         owner: 'zhangbohun',
         admin: 'zhangbohun',
