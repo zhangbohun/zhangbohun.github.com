@@ -105,7 +105,7 @@
 <p><a href="https://www.wikiwand.com/zh/Brotli" target="_blank" rel="noopener">Brotli</a>： 基于LZ77算法的一个现代变体，使用了霍夫曼编码和二阶上下文建模，使用了预定义的120千字节字典包含超过13000个常用单词、短语和其他子字符串，预定义的算法可以提升较小文件的压缩密度。总体速率接近于DEFLATE且压缩率接近于LZMA</p>
 <h2 id="相关常见名词说明"><a href="#相关常见名词说明" class="headerlink" title="相关常见名词说明"></a>相关常见名词说明</h2><p>RAR： 商业软件WinRAR提供的压缩文件格式，压缩算法实现带专利（可能衍生自LZSS）<br>Zip： 一种规范开放的压缩文件容器，被多种压缩软件实现，兼容多种压缩算法主要为DEFLATE<br>GZip： gnu/Linux下的文件压缩软件，提供gz压缩格式，压缩算法基于DEFLATE<br>7-Zip： 开源跨平台压缩软件，提供7z压缩格式，压缩算法主要为Bzip2以及LZMA  </p>
 <h2 id="其他类型通用算法"><a href="#其他类型通用算法" class="headerlink" title="其他类型通用算法"></a>其他类型通用算法</h2><p>另有<a href="https://www.wikiwand.com/zh-hans/%E5%8B%95%E6%85%8B%E9%A6%AC%E5%8F%AF%E5%A4%AB%E5%A3%93%E7%B8%AE" target="_blank" rel="noopener">DMC（动态马可夫压缩）</a>，<a href="https://arxiv.org/abs/1811.08162" target="_blank" rel="noopener">DeepZip</a>,以及<a href="https://www.wikiwand.com/en/Prediction_by_partial_matching" target="_blank" rel="noopener">PPM</a>和他的改进版<a href="https://www.wikiwand.com/en/PAQ" target="_blank" rel="noopener">PAQ</a>（实现Context mixing 智能地结合多个 (PPM 是单个模型) 统计模型）等算法，基本原理是通过部分数据以及各种算法来预测后续输入的符号，通过这种算法来减少输出数据的熵实现压缩。</p>
-<h1 id="特定领域压缩算法"><a href="#特定领域压缩算法" class="headerlink" title="特定领域压缩算法"></a>特定领域压缩算法</h1><p>快速压缩算法：<a href="https://www.wikiwand.com/zh-hans/LZ4" target="_blank" rel="noopener">LZ4</a>，<a href="https://www.wikiwand.com/zh-hans/Snappy" target="_blank" rel="noopener">Snappy</a>，都衍生自L77算法，具有还不错的压缩率以及极快的压缩解压速率，广泛用于RPC调用时传输数据压缩，LZ4还被用于内存压缩技术</p>
+<h1 id="特定领域压缩算法"><a href="#特定领域压缩算法" class="headerlink" title="特定领域压缩算法"></a>特定领域压缩算法</h1><p>快速压缩算法：<a href="http://www.quicklz.com/" target="_blank" rel="noopener">QuickLZ</a>，<a href="https://github.com/ning/compress" target="_blank" rel="noopener">LZF</a>，<a href="https://www.wikiwand.com/zh-hans/LZ4" target="_blank" rel="noopener">LZ4</a>，<a href="https://www.wikiwand.com/zh-hans/Snappy" target="_blank" rel="noopener">Snappy</a>，都衍生自L77算法，具有还不错的压缩率以及极快的压缩解压速率，广泛用于RPC调用时传输数据压缩，LZ4还被用于内存压缩技术</p>
 <p>无状态Zip压缩算法：<a href="http://www.libslz.org/" target="_blank" rel="noopener">Stateless ZIP library - SLZ</a>，提供了基于 zlib 实现的流数据压缩器</p>
 <p>数值压缩算法：<a href="http://www.360doc.com/content/17/1017/10/33093582_695630243.shtml" target="_blank" rel="noopener">Varint 与 ZigZag</a>，Varint 可以压缩较小的正数，ZigZag  可以处理负数及大整数使之也可以使用 Varint 编码压缩，protobuf和thrift二进制序列化算法中都使用了二者结合的方式来压缩数字类型</p>
 <p>JSON字符串压缩算法：<a href="https://blog.csdn.net/zhenyu5211314/article/details/52367185" target="_blank" rel="noopener">CJSON 和 HPack</a>，通过数据格式转换减少字符数实现数据压缩</p>
@@ -190,7 +190,7 @@
 	<p class="asidetitle">目录</p>
 		<ul>
 		
-			<li><a href="/categories/1-编程/" title="1.编程">1.编程<sup>8</sup></a></li>
+			<li><a href="/categories/1-编程/" title="1.编程">1.编程<sup>5</sup></a></li>
 		
 			<li><a href="/categories/2-软件/" title="2.软件">2.软件<sup>8</sup></a></li>
 		
@@ -198,11 +198,11 @@
 		
 			<li><a href="/categories/4-思考整理/" title="4.思考整理">4.思考整理<sup>7</sup></a></li>
 		
-			<li><a href="/categories/5-收获感悟/" title="5.收获感悟">5.收获感悟<sup>9</sup></a></li>
+			<li><a href="/categories/5-收获感悟/" title="5.收获感悟">5.收获感悟<sup>5</sup></a></li>
 		
 			<li><a href="/categories/6-方法技巧/" title="6.方法技巧">6.方法技巧<sup>5</sup></a></li>
 		
-			<li><a href="/categories/7-杂七杂八/" title="7.杂七杂八">7.杂七杂八<sup>3</sup></a></li>
+			<li><a href="/categories/7-杂七杂八/" title="7.杂七杂八">7.杂七杂八<sup>2</sup></a></li>
 		
 		</ul>
 </div>
@@ -212,7 +212,7 @@
   <div class="tagcloudlist">
     <p class="asidetitle">标签云</p>
     <div class="tagcloudlist clearfix">
-       <a href="/tags/书籍/" style="font-size: 11.67px;">书籍</a> <a href="/tags/介绍/" style="font-size: 18.33px;">介绍</a> <a href="/tags/代码/" style="font-size: 11.67px;">代码</a> <a href="/tags/使用技巧/" style="font-size: 16.67px;">使用技巧</a> <a href="/tags/工具/" style="font-size: 16.67px;">工具</a> <a href="/tags/幻想/" style="font-size: 13.33px;">幻想</a> <a href="/tags/我的软件/" style="font-size: 16.67px;">我的软件</a> <a href="/tags/整理总结/" style="font-size: 20px;">整理总结</a> <a href="/tags/无损压缩/" style="font-size: 10px;">无损压缩</a> <a href="/tags/旧文/" style="font-size: 15px;">旧文</a> <a href="/tags/时间管理/" style="font-size: 11.67px;">时间管理</a> <a href="/tags/有趣/" style="font-size: 16.67px;">有趣</a> <a href="/tags/游戏/" style="font-size: 11.67px;">游戏</a> <a href="/tags/神神叨叨/" style="font-size: 13.33px;">神神叨叨</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/观后感/" style="font-size: 13.33px;">观后感</a> <a href="/tags/观点/" style="font-size: 16.67px;">观点</a> <a href="/tags/读后感/" style="font-size: 16.67px;">读后感</a> <a href="/tags/象征/" style="font-size: 11.67px;">象征</a> <a href="/tags/阅读/" style="font-size: 16.67px;">阅读</a>
+       <a href="/tags/书籍/" style="font-size: 12px;">书籍</a> <a href="/tags/介绍/" style="font-size: 16px;">介绍</a> <a href="/tags/代码/" style="font-size: 10px;">代码</a> <a href="/tags/使用技巧/" style="font-size: 16px;">使用技巧</a> <a href="/tags/工具/" style="font-size: 18px;">工具</a> <a href="/tags/幻想/" style="font-size: 14px;">幻想</a> <a href="/tags/我的软件/" style="font-size: 18px;">我的软件</a> <a href="/tags/我的软件-工具/" style="font-size: 10px;">我的软件,工具</a> <a href="/tags/整理总结/" style="font-size: 20px;">整理总结</a> <a href="/tags/无损压缩/" style="font-size: 10px;">无损压缩</a> <a href="/tags/旧文/" style="font-size: 16px;">旧文</a> <a href="/tags/时间管理/" style="font-size: 12px;">时间管理</a> <a href="/tags/有趣/" style="font-size: 18px;">有趣</a> <a href="/tags/神神叨叨/" style="font-size: 12px;">神神叨叨</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/观后感/" style="font-size: 12px;">观后感</a> <a href="/tags/观点/" style="font-size: 18px;">观点</a> <a href="/tags/读后感/" style="font-size: 16px;">读后感</a> <a href="/tags/象征/" style="font-size: 12px;">象征</a> <a href="/tags/阅读/" style="font-size: 18px;">阅读</a>
     </div>
   </div>
 
@@ -260,7 +260,7 @@
 		<a href="mailto:zhangbohun@163.com" target="_blank" class="icon-email" title="Email Me"></a>
 		
 	</div>
-		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2019 
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Pacman">Jacman</a> © 2020 
 		
 		<a href="http://zhangbohun.github.io/about" target="_blank" title="zhangbohun">zhangbohun</a>
 		
