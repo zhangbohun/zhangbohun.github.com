@@ -9,9 +9,8 @@
     
     <meta name="author" content="zhangbohun">
     
-    <meta name="description" content="这也是一个Chrome浏览器扩展应用。它的功能是控制网页音频视频的音量大小。下载链接：百度网盘Chrome商店：链接控制界面如下：  
-网上其实可以找到很多类似的音量控制的扩展，不过我做的这个有一点微小的进步：部分实现了自动记忆音量配置的功能
-做这个扩展的初心最想要实现的功能就是这个自动设置，可惜最">
+    <meta name="description" content="这也是一个Chrome浏览器扩展应用。它的功能是控制网页音频视频的音量大小。下载链接：百度网盘Chrome商店：链接控制界面如下：   
+网上其实可以找到很多类似的音量控制的扩展，不过我做的这个有一点微小的进步：部分实现了自动记忆音量配置的功能做这个扩展的初心最想要实现的功能就是这个自动设置，可惜最">
     
     
     
@@ -73,7 +72,7 @@
   <p class="article-author">By
       <a href="http://zhangbohun.github.io/about" title="zhangbohun" target="_blank">zhangbohun</a>
   </p><p class="article-time">
-    <time datetime="2018-12-07T05:55:20.000Z" itemprop="datePublished">发表于2018年 12月 07日</time>
+    <time datetime="2018-12-07T05:55:20.000Z" itemprop="datePublished">发表于2018年12月07日</time>
     
   </p>
 </header>
@@ -87,9 +86,8 @@
 		
 		</div>
 		
-		<p>这也是一个Chrome浏览器扩展应用。<br>它的功能是控制网页音频视频的音量大小。<br>下载链接：<a href="https://pan.baidu.com/s/1tjFbtnQsCX-C9CcsJwf9nA" target="_blank" rel="noopener">百度网盘</a><br>Chrome商店：<a href="https://chrome.google.com/webstore/detail/ogpbjlhpdjmcbkocjibemdmblffnfkmm" target="_blank" rel="noopener">链接</a><br>控制界面如下：<br><img src="\images\VolumeManager.png" alt><br>  </p>
-<p>网上其实可以找到很多类似的音量控制的扩展，<br>不过我做的这个有一点微小的进步：<br>部分实现了自动记忆音量配置的功能</p>
-<p>做这个扩展的初心最想要实现的功能就是这个自动设置，可惜最后只能做出这样一个将就妥协的版本。<br>其中缘由在此记录，<br>已有的那些音量控制扩展都是基于浏览器原生API（<code>chrome.tabCapture.capture</code>）实现的，但由于于Chrome浏览器的限制扩展无法实现自动在后台改变页面音量，唉。  </p>
+		<p>这也是一个Chrome浏览器扩展应用。<br>它的功能是控制网页音频视频的音量大小。<br>下载链接：<a href="https://pan.baidu.com/s/1tjFbtnQsCX-C9CcsJwf9nA" target="_blank" rel="noopener">百度网盘</a><br>Chrome商店：<a href="https://chrome.google.com/webstore/detail/ogpbjlhpdjmcbkocjibemdmblffnfkmm" target="_blank" rel="noopener">链接</a><br>控制界面如下：<br><img src="\images\VolumeManager.png" alt>   </p>
+<p>网上其实可以找到很多类似的音量控制的扩展，<br>不过我做的这个有一点微小的进步：部分实现了自动记忆音量配置的功能<br>做这个扩展的初心最想要实现的功能就是这个自动设置，可惜最后只能做出这样一个将就妥协的版本。<br>其中缘由在此记录，<br>已有的那些音量控制扩展都是基于浏览器原生API（<code>chrome.tabCapture.capture</code>）实现的，但由于Chrome浏览器的限制扩展无法实现打开页面时自动设置页面音量，唉。  </p>
 <p>要实现这个自动设置的功能只能通过HTML5标准中的API来实现，但这样就只能支持通过HTML5标准中的Video和Audio标签加载的音视频了，而且还有页面中Vido标签变化导致设置失效的问题（解决这个问题也挺麻烦的）。   </p>
 <p>想到最后就出了这个方案，根据不同页面可以设置这两种不同的实现。 </p>
   
